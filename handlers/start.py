@@ -9,7 +9,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋🏻 Hi {message.from_user.first_name}!</b>
+        f"""<b>👋🏻 Hii Guys! {message.from_user.first_name}!</b>
 
 Haii Aku Pemutar Musik Telegram, Kamu Bisa Mendengarkan Musik Di Telegram!.
 
@@ -46,10 +46,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✅ Yes", switch_inline_query_current_chat=""
+                        "✅ Yes", Apakah Kamu Ingin Mencari Lagu??=""
                     ),
                     InlineKeyboardButton(
-                        "No ❌", callback_data="close"
+                        "No ❌", callback_data="Tidak / Close"
                     )
                 ]
             ]
